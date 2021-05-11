@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url(img/cidade-invisivel.png);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: top right;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.699);
+
+}
+
+main{
+
+    flex-grow: 6;
+
+}
+
+footer{
+
+    flex-grow: 1;
+    
+}
