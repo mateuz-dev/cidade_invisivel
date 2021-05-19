@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--------------------------------------------*/
+
+body{
+
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url(img/curupira.png);
+    background-color: #00000099;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: top right;
+
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+    font-family: 'Karla', sans-serif;
+}
+
+/*--------------------------------------------*/
+
+header{
+
+    height: 50px;
+    background-color: #00000099;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
+
+.logo img{
+    width: 115px;
+}
+
+
+.links ul{
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+}
+
+.links a{
+
+    color: white;
+    font-size: 15px;
+
+    text-decoration: none;
+    user-select: none;
+    transition: 0.5s;
+}
+
+.links a:hover {
+    color: #d81f26;
+}
+
+/*--------------------------------------------*/
+
+main{
+    flex-grow: 6;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 20vh;
+    background-image: url(img/fogo.gif);
+}
+
+main h2{
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #d81f26;
+    padding-bottom: 5px;
+}
+
+main h1{
+    font-family: 'Karla', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    color: #ffffff00;
+}
+
+
+main p{
+    font-size: 22px;
+    font-weight: lighter;
+    max-width: 700px;
+}
+
+/*--------------------------------------------*/
+
+.info{
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    width: 350px;
+    justify-content: space-between;
+}
+
+.info p{
+    font-size: 15px;
+    color: white;
+}
+
+#ator{
+    display: flex;
+    flex-direction: column;
+}
+
+#personagem{
+    display: flex;
+    flex-direction: column;
+}
+
+#entidade{
+    display: flex;
+    flex-direction: column;
+}
+
+/*--------------------------------------------*/
+
+footer{
+    flex-grow: 1;   
+}
+
+footer a{
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Karla', sans-serif;
+    color: white;
+}
+
+/*--------------------------------------------*/
