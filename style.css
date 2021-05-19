@@ -127,7 +127,7 @@ footer{
     flex-grow: 1;   
 }
 
-footer p{
+footer a{
     text-align: center;
     text-decoration: none;
     font-family: 'Karla', sans-serif;
@@ -149,9 +149,9 @@ footer p{
 
 @keyframes voar{
     0%{
-        transform: translate(0, 0);
+        transform: translate(-1vw, -1vh);
     }
     100%{
-        transform: translate(-90vw, -90vh);
+        transform: translate(-101vw, -120vh);
     }
 }
