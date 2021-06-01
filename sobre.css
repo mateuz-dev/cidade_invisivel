@@ -13,16 +13,20 @@ body{
     width: 100vw;
     height: 100vh;
 
-    background-image: url(img/cidade-invisivel1.png);
-    background-color: #000000AA;
+    background-image: url(img/cidade-invisivel2.png);
+    background-color: #000000cc;
     background-blend-mode: darken;
     background-size: cover;
     background-position: top right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     color: white;
+    font-family: 'Karla', sans-serif;
 }
 
 /*--------------------------------------------*/
@@ -114,56 +118,88 @@ nav{
 
 main{
     flex-grow: 6;
+    padding-top: 5vh;
     padding-left: 150px;
     padding-right: 150px;
-    padding-top: 25vh;
-}
-
-main h2{
-    font-family: 'Karla', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: #d81f26;
-    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 main h1{
     font-family: 'Karla', sans-serif;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 25px;
 }
 
-main p{
-    font-family: 'Karla', sans-serif;
-    font-size: 22px;
+p{
+    font-size: 23px;
     font-weight: lighter;
     max-width: 700px;
-
-    padding-bottom: 45px;
 }
 
-main a{
+/*--------------------------------------------*/
 
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: 'Karla', sans-serif;
-    background: #d81f26;
-    border-radius: 10px;
-    user-select: none;
+table img{
+    width: 150px;
+}
 
-    width: 165px;
-    height: 40px;
-    
+tr{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 35px;
     align-items: center;
+}
+td{
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;
+}
 
+table a{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
     transition: 0.5s;
 }
+table a:hover{
+    color: #d81f26;
+    background-color: black;
+}
 
-main a:hover{
-    background-color: #580b0d;
+/*--------------------------------------------*/
+
+.info{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    margin-bottom: 150px;
+}
+
+.info p{
+    font-size: 15px;
+    color: white;
+}
+.info hr{
+    border-color: #d81f26;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.info img{
+    width: 30px;
+}
+
+
+#faixa-etaria, #episodios, #temporadas, #pais, #original{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /*--------------------------------------------*/
@@ -176,6 +212,7 @@ footer{
 }
 footer a{
     text-decoration: none;
+    margin-bottom: 30px;
 }
 footer p{
     text-align: center;
@@ -185,23 +222,3 @@ footer p{
 }
 
 /*--------------------------------------------*/
-
-.borboleta img{
-
-    width: 60px;
-    position: absolute;
-    top: 90vh;
-    left: 90vw;
-    filter: brightness(30%);
-
-    animation: voar 25s linear infinite;
-}
-
-@keyframes voar{
-    0%{
-        transform: translate(-1vw, -1vh);
-    }
-    100%{
-        transform: translate(-101vw, -120vh);
-    }
-}
